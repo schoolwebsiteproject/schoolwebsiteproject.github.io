@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>IO</title>
+</head>
+<font face="Arial">
+<center>
+<body bgcolor="41ADD1">
+<center><img src="logo.png" />
+<style>
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+img {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+#test p {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+</style>
+<div id="test"><p>Input and Output systems are the core of any computer. They input data, process it and then output it as a readable result for the user.</p></div>
+<br></br>
+<div id="test"><p>Below are some examples and more information</p></div>
+<br></br>
+</center>
+<div id="test"><p>Here is a basic example of what an Input - Output system is</p></div>
+<center>
+<img src="example.png" />
+<div id="test"><p>Click the button below for a basic example of an input</p></div>
+`<button onclick="myFunction()" class="button hvr-grow">Input</button>
+
+<p id="input"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("input").innerHTML = "This is an output";
+}
+</script>
+<div id="test"><p>The input is sent from a device. For example: a keyboard. It is then processed by the computer and an output is given to the user, for example: The cursor moving when the user moves the mouse.</p></div>
+
